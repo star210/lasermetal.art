@@ -1,0 +1,60 @@
+{{ define "main" }}
+
+    <section class="contact">
+        <div class="container">
+
+            <!-- map -->
+            <div class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.5766407045967!2d-0.0139705!3d51.5209826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d4e655c823d%3A0xc91cff08002c695a!2s201%2C%2030%20Brickfield%20Rd%2C%20London%20E3%203LT%2C%20UK!5e0!3m2!1sen!2str!4v1669547582531!5m2!1sen!2str" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="contact__bottom">
+                <div class="contact__info">
+                    <h3>Address:</h3>
+                    <a href="#">Studio 201 30 Brickfield Road London E3 3LT</a>
+                    <h3>E-mail:</h3>
+                    <a href="mailto:studio@starholden.com">studio@starholden.com</a>
+                    <h3>Instagram:</h3>
+                    <a href="#">@starholden</a>
+                </div>
+
+                <form class="form" style="flex: 1;">
+
+                    <div class="form__row">
+                        <div class="form__col">
+                            <label>First Name</label>
+                            <input type="text" />
+                        </div>
+                        <div class="form__col">
+                            <label>Last Name</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col">
+                            <label>E-mail</label>
+                            <input type="text" />
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col">
+                            <label>Message</label>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form__row">
+                        <div class="form__col">
+                            <button class="button">Send</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+{{ end }}

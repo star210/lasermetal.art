@@ -1,0 +1,70 @@
+<header id="header" class="header">
+    <div class="container header-container">
+        <a class="header-logo" href="/">
+            <img src="/images/logo.svg" />
+        </a>
+        <button id="header-responsive-button" class="header-responsive-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <ul id="header-nav" class="header-nav">
+            {{ $current := . }}
+            {{ range $index, $element := .Site.Menus.header }}
+                {{ if .HasChildren }}
+                <li>
+                    <a onclick="toggleDropdown('header-dropdown-{{$index}}')">{{ $element.Name }}</a>
+                    <ul id="header-dropdown-{{ $index }}" class="header-nav-dropdown">
+                        {{ range $element.Children }}
+                        <li>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <li>
+                    <a href="{{ $element.URL }}">{{ $element.Name }}</a>
+                </li>
+                {{ end }}
+            {{ end }}
+            <li>
+                <a href="/about/free-quote" class="header-button">Free Quote</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<header id="header-scrolled" class="header header--scrolled">
+    <div class="container header-container">
+        <a class="header-logo" href="/">
+            <img src="/images/logo.svg" />
+        </a>
+        <button id="header-responsive-button-scrolled" class="header-responsive-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+        <ul id="header-nav-scrolled" class="header-nav">
+            {{ $current := . }}
+            {{ range $index, $element := .Site.Menus.header }}
+                {{ if .HasChildren }}
+                <li>
+                    <a onclick="toggleDropdown('header-dropdown-{{$index}}-scrolled')">{{ $element.Name }}</a>
+                    <ul id="header-dropdown-{{ $index }}-scrolled" class="header-nav-dropdown">
+                        {{ range $element.Children }}
+                        <li>
+                            <a href="{{ .URL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </li>
+                {{ else }}
+                <li>
+                    <a href="{{ $element.URL }}">{{ $element.Name }}</a>
+                </li>
+                {{ end }}
+            {{ end }}
+            <li>
+                <a href="/about/free-quote" class="header-button">Free Quote</a>
+            </li>
+        </ul>
+    </div>
+</header>
+<div class="header__spacing"></div>

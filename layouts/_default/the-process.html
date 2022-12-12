@@ -1,0 +1,95 @@
+{{ define "main" }}
+
+    <section class="the-process-section">
+        <div class="container">
+            <h2>Design</h2>
+            <img src="/images/home-1.jpg" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+            </p>
+        </div>
+    </section>
+
+    <section class="the-process-section">
+        <div class="container">
+            <h2>Laser Cutting</h2>
+            <img src="/images/home-2.jpg" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+            </p>
+        </div>
+    </section>
+
+    <section class="the-process-section">
+        <div class="container">
+            <h2>Finishes</h2>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="/images/home-1.jpg" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+            </p>
+        </div>
+    </section>
+
+    <section class="the-process-section">
+        <div class="container">
+            <h2>Installation</h2>
+            <img src="/images/home-3.jpg" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+            </p>
+        </div>
+    </section>
+
+    {{ partial "cta" . }}
+
+{{ end }}
+
+{{ define "page-scripts" }}
+<script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1600: {
+          slidesPerView: 3,
+        },
+        1025: {
+          slidesPerView: 2,
+        }
+      }
+    });
+</script>
+{{ end }}

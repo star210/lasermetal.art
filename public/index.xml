@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Laser Metal Art on My New Hugo Site</title>
+    <link>http://example.org/</link>
+    <description>Recent content in Laser Metal Art on My New Hugo Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://example.org/about/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>F.A.Q</title>
+      <link>http://example.org/about/faq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/faq/</guid>
+      <description>Question Title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+Question Title Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt.</description>
+    </item>
+    
+    <item>
+      <title>Family Business</title>
+      <link>http://example.org/about/family-business/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/family-business/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Free Quote</title>
+      <link>http://example.org/about/free-quote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/free-quote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gallery</title>
+      <link>http://example.org/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/gallery/</guid>
+      <description>Gallery </description>
+    </item>
+    
+    <item>
+      <title>The Process</title>
+      <link>http://example.org/about/the-process/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://example.org/about/the-process/</guid>
+      <description>Design Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec.</description>
+    </item>
+    
+  </channel>
+</rss>

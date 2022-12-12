@@ -1,0 +1,42 @@
+.footer {
+    padding: 20px 0;
+    color: $color_white;
+    background-color: $color_dark_gray;
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__links {
+        a {
+            color: $color_white;
+        }
+    }
+
+    p {
+        margin-bottom: 0;
+        font-family: $font_serif;
+        line-height: 28px;
+        font-size: 18px;
+        text-align: center;
+        color: $color_white;
+    }
+
+    &-copyright {
+        font-family: $font_serif;
+        font-size: 16px;
+    }
+
+    @include md {
+        p {
+            font-size: 16px;
+        }
+
+        &-copyright {
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &__row {
+        display: flex;
+        gap: 20px;
+
+        @include md {
+            flex-direction: column;
+        }
+    }
+
+    &__col {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        label {
+            font-size: 18px;
+            font-family: $font_serif;
+            font-weight: 500;
+            color: $color_black;
+        }
+
+        input {
+            padding: 10px 12px;
+            font-family: $font_serif;
+            font-size: 18px;
+            color: $color_black;
+            border: 1px solid $color_light_gray;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        textarea {
+            padding: 10px 12px;
+            font-family: $font_serif;
+            font-size: 18px;
+            color: $color_black;
+            border: 1px solid $color_light_gray;
+            border-radius: 5px;
+            outline: none;
+            resize: vertical;
+        }
+
+        select {
+            height: 45px;
+            padding: 10px 12px;
+            font-family: $font_serif;
+            font-size: 18px;
+            color: $color_black;
+            background-color: $color_white;
+            border: 1px solid $color_light_gray;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 8px 40px;
+            margin: 0 auto;
+            font-family: $font_serif;
+            font-size: 18px;
+            text-decoration: none;
+            color: $color_white;
+            font-weight: bold;
+            background-color: $color_red;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.the-process-section {
+    margin-top: 80px;
+
+    h2 {
+        margin-bottom: 60px;
+    }
+
+    img {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+    p {
+        margin-top: 30px;
+    }
+
+    @include md {
+        margin-top: 40px;
+
+        img {
+            height: 280px;
+        }
+    }
+}

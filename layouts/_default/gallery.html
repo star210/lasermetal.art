@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+    <section class="gallery">
+        <div class="container">
+            {{ $col1 := slice }}
+            {{ $col2 := slice }}
+            {{ $col3 := slice }}
+            {{ $round := 0 }}
+            {{ range .Params.images }}
+                {{ if eq $round 0 }}
+                    {{ $col1 = $col1 | append (slice . ) }}
+                    {{ $round = 1 }}
+                {{ else if eq $round 1 }}
+                    {{ $col2 = $col2 | append (slice . ) }}
+                    {{ $round = 2 }}
+                {{ else if eq $round 2 }}
+                    {{ $col3 = $col3 | append (slice . ) }}
+                    {{ $round = 0 }}
+                {{ end }}
+            {{ end }}
+            <div class="gallery__col">
+                {{ range $col1 }}
+                <a href="{{ . }}" data-type="image" class="glightbox">
+                    <img loading="lazy" src="{{ . }}" />
+                </a>
+                {{ end }}
+            </div>
+            <div class="gallery__col">
+                {{ range $col2 }}
+                <a href="{{ . }}" data-type="image" class="glightbox">
+                    <img loading="lazy" src="{{ . }}" />
+                </a>
+                {{ end }}
+            </div>
+            <div class="gallery__col">
+                {{ range $col3 }}
+                <a href="{{ . }}" data-type="image" class="glightbox">
+                    <img loading="lazy" src="{{ . }}" />
+                </a>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+{{ end }}
+
+{{ define "page-scripts" }}
+    <script>
+        const lightbox = GLightbox();
+    </script>
+{{ end }}

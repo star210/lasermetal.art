@@ -1,0 +1,44 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+
+[menu]
+    [[menu.header]]
+        identifier = 'home'
+        name = 'Metal Art'
+        url = '/'
+        weight = 1
+    [[menu.header]]
+        identifier = 'gallery'
+        name = 'gallery'
+        url = '/gallery'
+        weight = 10
+    [[menu.header]]
+        identifier = 'about'
+        name = 'about'
+        url = '#'
+        weight = 20
+    [[menu.header]]
+        identifier = 'the-process'
+        parent = 'about'
+        name = 'The Process'
+        url = '/about/the-process'
+        weight = 10
+    [[menu.header]]
+        identifier = 'family-business'
+        parent = 'about'
+        name = 'Family Business'
+        url = '/about/family-business'
+        weight = 20
+    [[menu.header]]
+        identifier = 'faq'
+        parent = 'about'
+        name = 'F.A.Q'
+        url = '/about/faq'
+        weight = 30
+    [[menu.header]]
+        identifier = 'contact'
+        parent = 'about'
+        name = 'Contact'
+        url = '/about/contact'
+        weight = 40

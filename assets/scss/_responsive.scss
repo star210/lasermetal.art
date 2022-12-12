@@ -1,0 +1,38 @@
+$breakpoint_sm: 576px;
+$breakpoint_md: 768px;
+$breakpoint_lg: 1025px;
+$breakpoint_xl: 1600px;
+
+@mixin sm {
+    @media (max-width: #{$breakpoint_sm}) {
+       @content;
+    }
+}
+
+// Medium devices
+@mixin md {
+    @media (max-width: #{$breakpoint_md}) {
+       @content;
+    }
+}
+
+// Large devices
+@mixin lg {
+    @media (max-width: #{$breakpoint_lg}) {
+       @content;
+    }
+}
+
+// Extra large devices
+@mixin xl {
+    @media (max-width: #{$breakpoint_xl}) {
+       @content;
+    }
+}
+
+// Custom devices
+@mixin cbpt($screen) { // custom break point
+    @media (max-width: $screen +'px') {
+       @content;
+    }
+}

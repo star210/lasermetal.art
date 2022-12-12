@@ -1,0 +1,20 @@
+.faq {
+    padding-top: 36px;
+    padding-bottom: 80px;
+
+    h3 {
+        font-size: 18px;
+        font-family: $font_serif;
+        font-weight: bold;
+        color: $color_black;
+        margin-bottom: 20px;
+        margin-top: 44px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 26px;
+        font-family: $font_serif;
+        color: $color_black;
+    }
+}

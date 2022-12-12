@@ -1,0 +1,26 @@
+.family-business {
+    padding: 80px 0;
+
+    &-container {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        @include lg {
+            flex-direction: column;
+        }
+    }
+
+    img {
+        width: 600px;
+        object-fit: cover;
+
+        @include lg {
+            width: 100%;
+        }
+    }
+
+    p {
+        flex: 1;
+    }
+}

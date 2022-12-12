@@ -1,0 +1,58 @@
+{{ define "main" }}
+
+    <section class="featured-work">
+        <div class="container featured-work-container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                {{ range .Params.featuredArtworkSlider }}
+                <div class="swiper-slide">
+                  <img src="{{ . }}" />
+                </div>
+                {{ end }}
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+            <h2>Featured Artwork One</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut interdum elementum tincidunt. Donec dictum elementum purus, eget fringilla nunc aliquet nec. Nam tristique nulla sit amet ex lobortis volutpat.
+            </p>
+        </div>
+    </section>
+
+    <section class="three-item-grid">
+        <div class="container three-item-grid-container">
+            {{ range .Params.tig }}
+            <div class="three-item-grid__item">
+                <img src="{{ .img }}" />
+                <h3>{{ .title }}</h3>
+                <p>{{ .paragraph }}</p>
+            </div>
+            {{ end }}
+        </div>
+    </section>
+
+    {{ partial "cta" . }}
+
+{{ end }}
+
+
+{{ define "page-scripts" }}
+<script>
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        1600: {
+          slidesPerView: 3,
+        },
+        1025: {
+          slidesPerView: 2,
+        }
+      }
+    });
+</script>
+{{ end }}

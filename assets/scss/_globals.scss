@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#main {
+    flex: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font_serif;
+    font-weight: bold;
+    color: $color_black;
+}
+
+h2 {
+    font-size: 32px;
+    text-align: center;
+
+    @include md {
+        font-size: 28px;
+    }
+}
+
+h3 {
+    font-size: 24px;
+
+    @include md {
+        font-size: 20px;
+    }
+}
+
+p {
+    font-family: $font_serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_black;
+    margin-bottom: 20px;
+}
+
+.content {
+    padding: 80px;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin-top: 20px;
+
+    &-bullet {
+        width: 12px;
+        height: 12px;
+
+        &-active {
+            background-color: $color_red;
+        }
+    }
+}
+
+.button {
+    padding: 8px 40px;
+    margin: 0 auto;
+    font-family: $font_serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: $color_white;
+    font-weight: bold;
+    background-color: $color_red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity $transition_duration;
+
+    &:hover {
+        opacity: .8;
+    }
+}

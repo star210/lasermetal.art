@@ -1,0 +1,21 @@
+/*
+ * This class requires responsive package
+ */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $breakpoint_xl;
+
+    @include xl {
+        max-width: $breakpoint_lg;
+    }
+
+    @include lg {
+        max-width: $breakpoint_md;
+    }
+
+    @include md {
+        max-width: $breakpoint_sm;
+        padding: 0 20px;
+    }
+}
