@@ -2,6 +2,9 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
+[params]
+    formUrl = "https://getform.io/f/6385fe99-794b-47ba-9ae3-c067ebb80979"
+
 [menu]
     [[menu.header]]
         identifier = 'home'
