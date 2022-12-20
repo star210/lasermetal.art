@@ -8,4 +8,14 @@
 
     {{ $style := resources.Get "scss/main.scss" | toCSS }}
     <link rel="stylesheet" type="text/css" href="{{ $style.RelPermalink }}" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M2GXCRQ1V5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M2GXCRQ1V5');
+    </script>
 </head>
