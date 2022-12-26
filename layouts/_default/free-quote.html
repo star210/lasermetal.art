@@ -51,11 +51,7 @@
                 <div class="form__row">
                     <div class="form__col">
                         <label>County</label>
-                        <select name="county">
-                            <option value="test">Test</option>
-                            <option value="sda">SDA</option>
-                            <option value="sadfasdf">sadfasdf</option>
-                        </select>
+                        <input name="county" type="text" required />
                     </div>
                     <div class="form__col">
                         <label>Postcode</label>
@@ -66,11 +62,13 @@
                 <div class="form__row">
                     <div class="form__col">
                         <label>Upload Inspiration Images</label>
-                        <input name="inspiration_images[]" type="file" required />
+                        <span>Max 5MB file size</span>
+                        <input name="inspiration_images[]" type="file" required multiple />
                     </div>
                     <div class="form__col">
                         <label>Upload Project Location Image</label>
-                        <input name="project_location_image[]" type="file" required />
+                        <span>Max 5MB file size</span>
+                        <input name="project_location_image[]" type="file" required multiple />
                     </div>
                 </div>
 
@@ -81,11 +79,7 @@
                     </div>
                     <div class="form__col">
                         <label>How Did You Find Laser Metal Art?</label>
-                        <select name="how_you_find">
-                            <option name="test">Test</option>
-                            <option name="test_2">SDA</option>
-                            <option name="test_3">sadfasdf</option>
-                        </select>
+                        <input name="how_you_find" type="text" />
                     </div>
                 </div>
 
