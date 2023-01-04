@@ -15,6 +15,12 @@ This file contains general information and customization about the site.
 | params > `email` | E-mail, used in footer and contact page |
 | params > `formUrl` | Url for the form submission backend |
 
+## Local Static Images
+
+You can put your local images inside /static/images folder. Whenever you want to call it just use the `/images/filename` or
+`https://lasermetal.art/filename` for internet accessible images. For example if you want to place your logo inside html:
+`<img src="/images/logo.svg" />` and `<img src="https://lasermetal.art/images/logo.svg" />` both will work fine.
+
 ## Homepage (content/_index.md)
 
 Frontmatter variables:
