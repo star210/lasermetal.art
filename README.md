@@ -4,6 +4,7 @@
 
 This file contains general information and customization about the site.
 
+| Parameter | Description |
 |---|---|
 | `baseURL` | URL of the site |
 | `title` | Title of the site |
@@ -18,6 +19,7 @@ This file contains general information and customization about the site.
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -29,6 +31,7 @@ Frontmatter variables:
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -41,6 +44,7 @@ Frontmatter variables:
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -55,6 +59,7 @@ slider just play with html elements under `<div class="swiper-wrapper">`.
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -68,6 +73,7 @@ The content is coming from the html for now. It's can be found at `/layots/_defa
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -80,6 +86,7 @@ Each question uses `###` heading 3 as title. It's data straightly coming from it
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
@@ -89,6 +96,7 @@ Frontmatter variables:
 
 Frontmatter variables:
 
+| Parameter | Description |
 |---|---|
 | `title` | Title of the page |
 | `heroTitle` | Text displayed on top of the page under the header |
