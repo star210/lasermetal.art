@@ -23,6 +23,11 @@
         font-size: 18px;
         text-align: center;
         color: $color_white;
+
+        a {
+            text-decoration: none;
+            color: $color_white;
+        }
     }
 
     &-copyright {

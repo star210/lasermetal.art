@@ -1,5 +1,5 @@
 ---
-title: "Laser Metal Art"
+title: "Metal Art"
 heroTitle: "Laser Metal Art Welcome Title"
 layout: homepage
 featuredArtworkSlider:
